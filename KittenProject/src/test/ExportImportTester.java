@@ -131,7 +131,6 @@ public class ExportImportTester {
 		myActualSettings.exportJSON(new File(filePath));
 
 		Scanner out = new Scanner(new File(testURL.getPath()));
-		System.out.println("typical export path is: " + testURL.getPath());
 		out.useDelimiter("\\Z");
 		final String actual = out.next();
 
