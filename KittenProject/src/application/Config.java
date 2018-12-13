@@ -1,6 +1,5 @@
 package application;
 
-import java.io.File;
 import java.net.URL;
 
 /**
@@ -24,43 +23,12 @@ public class Config extends AbstractExportable {
 	 */
 	public Config() {
 		mySourcePath = retConfigPath();
-//		final File sourceFile = new File(mySourcePath);
-//		myExporter.importFile(sourceFile);
-
 		mySavePath = retSavePath();
 		myHomePath = retHomePath();
 		mySettingsPath = retSettingsPath();
 	}
-	
-//	/**
-//     * Date:12/10/18
-//     * @author Isaiah Miller
-//     * Pre: instance fields for home path and Settings path must be valid
-//     * Initializes theSettings and theHome from the states specified by the Config instance.
-//     */
-//    public final void initFromConfig(final ExportableDataAggregate thePersistentData/*final Home theHome, final Settings theSettings*/) {
-//    	thePersistentData.importJSON(new File(retPersistPath()));
-//    	//    	System.out.println("init home from: " + myHomePath);
-////    	final File homeFile = new File(myHomePath);
-////    	System.out.println("Home file is: " + myHomePath);
-////    	theHome.importJSON(homeFile);
-////    	System.out.println("The Home is: " + theHome);
-////    	theSettings.importJSON(new File(mySettingsPath));
-////    	System.out.println("the Settings is: " + theSettings);
-//    }
 
 
-//	/**
-//	 * @author Isaiah Miller
-//	 * @return
-//	 */
-//	public String retySourcePath() {
-//		return mySourcePath;
-//	}
-
-//	public void setMySourcePath(String mySourcePath) {
-//		this.mySourcePath = mySourcePath;
-//	}
 
 	public String getMySavePath() {
 		return mySavePath;
@@ -94,7 +62,6 @@ public class Config extends AbstractExportable {
 	 */
 	public String retSavePath() {
 		final URL saveURL = getClass().getResource("save");
-//		System.out.println("my URL save path is: " + saveURL.getPath());
 		return saveURL.getPath();
 	}
 	
