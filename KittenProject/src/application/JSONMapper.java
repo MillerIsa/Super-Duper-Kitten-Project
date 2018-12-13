@@ -9,13 +9,19 @@ package application;
 import java.io.File;
 import java.io.IOException;
 
+/*
+ * From Third Party Library: Jackson
+ * more information can be found at: https://github.com/FasterXML/jackson
+ */
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * REMOVE
+ * 
+ * Third Party Library: Jackson
+ * This library is used extensively in the following class
+ * more information can be found at: https://github.com/FasterXML/jackson
  * 
  * @author Isaiah Miller
- * 
  *         Converts Java objects to and from saveable JSON representations.
  */
 public class JSONMapper {
@@ -54,9 +60,6 @@ public class JSONMapper {
 	 * exports
 	 * @author Isaiah Miller
 	 * Writes home to a file in JSON format.
-	 */
-	/**
-	 * 
 	 */
 	public void export() {
 		File destFile = new File(Home.HOME_PATH);
