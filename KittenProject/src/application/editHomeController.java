@@ -29,7 +29,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class editHomeController extends Main implements Initializable {
-    //Heat
     /**
      * gasHeater
      */
@@ -145,8 +144,6 @@ public class editHomeController extends Main implements Initializable {
      * yOffset
      */
     private double yOffset = 0;
-    
-//    private final Home myHome;
     
 
     private Home myHome;

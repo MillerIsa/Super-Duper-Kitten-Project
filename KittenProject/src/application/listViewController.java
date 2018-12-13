@@ -66,28 +66,17 @@ public class listViewController extends Main implements Initializable {
      */
     ProjectList myProjects;
     
-
-//    final ExportableDataAggregate myPersistentData;
     
-//    public listViewController() {
-//    	final Config overallConfig = new Config();
-//    	final Settings overallSettings = new Settings();
-//    	overallConfig.initFromConfig(myMainHome, overallSettings);
-//    	myPersistentData = new ExportableDataAggregate(overallSettings, overallConfig, myMainHome);
-//    }
-    
-
 	/* (non-Javadoc)
 	 * @see javafx.fxml.Initializable#initialize(java.net.URL, java.util.ResourceBundle)
 	 */
 	@Override
     public void initialize(URL url, ResourceBundle rb) {
-				//populates list
+		//populates list
 		listView.setEditable(true);
 		myProjects = new ProjectList();
 		listView.setItems(myProjects.getPros());
 		pane.setVisible(false);
-//		mySettings = new Settings();
 		//end populate
     }
 	
@@ -106,8 +95,7 @@ public class listViewController extends Main implements Initializable {
 	 * @throws IOException
 	 */
 	@FXML public void handleMouseClick(MouseEvent arg0) throws IOException {
-	    selected = listView.getSelectionModel().getSelectedItem();                      //remembers what was clicked, needs to be pass on to projectview
-	    //System.out.println("clicked on " + selected); //prints what you clicked on
+	    selected = listView.getSelectionModel().getSelectedItem(); 
 	    if(selected != null) {
 	        changeScene("projectView.fxml", arg0);
 	    }
@@ -294,35 +282,7 @@ public class listViewController extends Main implements Initializable {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-    }
-    
-    
-    
-//    
-//    private void changeScene(final String theFXMLName, final Object theControllerParam) {
-//    	 FXMLLoader loader = new FXMLLoader();
-//         loader.setLocation(getClass().getResource(theFXMLName));
-//         loader.setControllerFactory(new Callback<Class<?>, Object>() {
-//             @Override
-//             public Object call(Class<?> aClass) {
-//                 return new SettingsController(myPersistentData.getMySettings());
-//             }
-//         });
-//         
-//         
-//         
-//         Stage stage = new Stage();
-//         stage.setTitle("Settings");
-//         stage.getIcons().add(new Image("application/resources/constructlogo.png"));
-//
-//         Parent root = (Parent) loader.load();
-//         Scene scene = new Scene(root);
-//         stage.setScene(scene);
-//         stage.setResizable(false);
-//         stage.show();
-//    }
-    
-    
+    }  
     
     /**
      * changes to home updater scene

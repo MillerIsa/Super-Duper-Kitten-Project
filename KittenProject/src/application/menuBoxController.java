@@ -15,38 +15,11 @@ import javafx.scene.effect.Glow;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-//observe this with an export controller
 public class menuBoxController extends Main {
-	// needs a reference to ExportableDataAggregate
-
-//	final Settings mySettings;
-//	final ExportableDataAggregate myPersistentData;
-
-//	/**
-//	 * Date:11/30/18
-//	 * 
-//	 * @author Isaiah Miller
-//	 * @param theSettings
-//	 * @param thePersistentData
-//	 */
-//	public menuBoxController(/* final Settings theSettings, */ final ExportableDataAggregate thePersistentData) {
-////		mySettings = theSettings;
-//		myPersistentData = thePersistentData;
-//	}
 
 	/**
 	 * mySettings
 	 */
-//	final Settings mySettings;
-
-	/**
-	 * sets the settings
-	 * 
-	 * @param theSettings
-	 */
-	public menuBoxController(/*final Settings theSettings*/) {
-//		mySettings = theSettings;
-	}
 
 	/**
 	 * exports file
@@ -91,8 +64,6 @@ public class menuBoxController extends Main {
 	void openUpdaterView(MouseEvent arg0) throws IOException {
 		super.changeScene("edithome.fxml", arg0);
 
-//     void openUpdaterView(MouseEvent event) throws IOException {
-// 		changeScene("homeUpdaterPage.fxml", event);
 
 	}
 

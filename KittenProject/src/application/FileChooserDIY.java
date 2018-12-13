@@ -61,9 +61,7 @@ public final class FileChooserDIY {
 	private static FileChooser chooserForSaveDir() {
 		FileChooser fileChooser = new FileChooser();
 		final String userDir = System.getProperty("user.dir");
-		// System.out.println(userDir);
 		final String initDir = userDir + File.separatorChar + REL_PATH;
-		// System.out.println(initDir);
 		fileChooser.setInitialDirectory(new File(initDir));
 		return fileChooser;
 	}

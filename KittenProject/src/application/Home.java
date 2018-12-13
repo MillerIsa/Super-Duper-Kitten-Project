@@ -26,15 +26,15 @@ public class Home extends AbstractExportable {
 	/**
 	 * myElectricBill
 	 */
-	float myElectricBill; //
+	float myElectricBill; 
 	/**
 	 * myGasBill
 	 */
-	float myGasBill; //
+	float myGasBill; 
 	/**
 	 * myWaterBill
 	 */
-	float myWaterBill; //
+	float myWaterBill;
 
 	/** Heating and cooling fields. */
 	/**
@@ -168,23 +168,11 @@ public class Home extends AbstractExportable {
 	 */
 	boolean myEStarDryer;
 
-//	private final ObjectMapper myMapper;
-//	private final ObjectReader myReader;
-//	private final ObjectWriter myWriter;
-	
-
 
 	/**
 	 * Home Constructor
 	 */
 	public Home() {
-//		//sets up JSON object mapper
-//		myMapper = new ObjectMapper();
-//		myReader = myMapper.readerForUpdating(this);
-//		myWriter = myMapper.writerWithDefaultPrettyPrinter();
-//		
-//		//initializes home from save file
-//		importHome();
 	    myMainHeatElect = true;
 	    myFurnanceMultStage = true;
 	    myProgThermostat = true;

@@ -36,10 +36,5 @@
   "mySettings" : {
     "myName" : "Loki",
     "myEmailAddress" : "hat@glove.com"
-  },
-  "myConfig" : {
-    "mySavePath" : "",
-    "myHomePath" : "",
-    "mySettingsPath" : ""
   }
 }

@@ -23,7 +23,6 @@ import javafx.util.Callback;
 
 public class Main extends Application {
 
-	/* Stage field. */
 	/**
 	 * myStage
 	 */
@@ -184,31 +183,14 @@ public class Main extends Application {
 		 */
 		public static void main(String[] args) throws IllegalArgumentException, IllegalAccessException {
 		    if(myPersistentData == null) {
-//		        myMainHome = new Home();
-//		    	final Config overallConfig = new Config();
-//		    	final Settings overallSettings = new Settings();
-//		    	myPersistentData.setMySettings(overallSettings);
-//		    	myPersistentData.setMyConfig(overallConfig);
-//		    	myPersistentData.setMyHome(myMainHome);
 		    	myPersistentData = new ExportableDataAggregate();
 		    	myPersistentData.importJSON();
 		    	theHome = myPersistentData.getMyHome();
 		    	if (myMainHome == null) {
 		    		myMainHome = myPersistentData.getMyHome();
 		    	}
-//		    	overallConfig.initFromConfig(myPersistentData);//myMainHome, overallSettings);
-//		    	System.out.println(myMainHome == myPersistentData.getMyHome());
-//		    	System.out.println("my Main home is (after import): " + myMainHome);
-//		    	System.out.println("Initialized config.");
 		    	
 		    }
-
-//			final Config template = new Config();
-//			System.out.println("construction.");
-//			final String confPath = template.retConfigPath();
-//			System.out.println("made conf path: " + confPath);
-//			template.exportJSON(new File(confPath));
-//			System.out.println("finished exporting.");
 	    	launch(args);
 	    }
 }

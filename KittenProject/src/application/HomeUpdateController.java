@@ -50,20 +50,6 @@ public class HomeUpdateController extends Main implements Initializable {
      */
     private double yOffset = 0;
     
-//    final ExportableDataAggregate myModel;
-    
-//    /**
-//     * Date: 11/25/18
-//     * @author Isaiah Miller
-//     */
-//    public HomeUpdateController() {
-//    	final Config overallConfig = new Config();
-//    	final Settings overallSettings = new Settings();
-//    	overallConfig.initFromConfig(theHome, overallSettings);
-//    	myModel = new ExportableDataAggregate(overallSettings, overallConfig, theHome);
-//	}
-
-    
 	
 	/* (non-Javadoc)
 	 * @see javafx.fxml.Initializable#initialize(java.net.URL, java.util.ResourceBundle)

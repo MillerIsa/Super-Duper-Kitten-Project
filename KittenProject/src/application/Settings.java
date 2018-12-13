@@ -25,14 +25,6 @@ public class Settings extends AbstractExportable {
 	 */
 	private StringProperty myEmailAddress;
 
-
-	// import/export fields
-//	private final ObjectMapper myMapper;
-//	private final ObjectReader myReader;
-//	private final ObjectWriter myWriter;
-
-
-
 	/**
 	 * constructs settings
 	 * @author Isaiah Miller
@@ -52,17 +44,6 @@ public class Settings extends AbstractExportable {
 		myExporter.importFile(srcFile);
 	}
 
-	// Pre-refactor style
-//		File srcFile = new File(Home.HOME_PATH);
-//		try {
-//			myReader.readValue(srcFile);
-//		} catch (IOException e) {
-//			System.out.println("Import failed... Making new Home save file.");
-//			exportSettings();
-//			e.printStackTrace();
-//		}
-//	}
-
 	/**
 	 * exports json
 	 * @author Isaiah Miller
@@ -71,9 +52,6 @@ public class Settings extends AbstractExportable {
 	public void exportJSON(final File destFile) {
 		myExporter.exportFile(destFile);
 	}
-
-
-	// getters and setters
 
 	/**
 	 * gets name
@@ -88,15 +66,10 @@ public class Settings extends AbstractExportable {
 	 * @param theName
 	 */
 	public void setMyName(String theName) {
-//		System.out.println(myName);
 		if(theName != null) {
 			myName.setValue(theName);
 		}
 	}
-
-//	public StringProperty myNameProperty() {
-//		return myName;
-//	}
 
 	/**
 	 * gets email address
@@ -116,10 +89,6 @@ public class Settings extends AbstractExportable {
 		}
 	}
 
-//	public StringProperty myEmailAddressProperty() {
-//		return myEmailAddress;
-//	}
-	
 	/* 
 	 * Date: 11/23/18
 	 * @author Isaiah Miller
