@@ -176,6 +176,7 @@ public class Main extends Application {
 
 
 		/**
+		 * @author Isaiah Miller
 		 * Main method that runs the program
 		 * @param args
 		 * @throws IllegalArgumentException

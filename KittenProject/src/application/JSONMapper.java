@@ -31,6 +31,7 @@ public class JSONMapper {
 	private final ObjectMapper mapper;
 
 	/**
+	 * @author Isaiah Miller
 	 * constructor
 	 */
 	public JSONMapper() {
@@ -39,6 +40,7 @@ public class JSONMapper {
 
 	
 	/**
+	 * @author Isaiah Miller
 	 * imports home
 	 * @param oldHome
 	 * @return
@@ -54,8 +56,6 @@ public class JSONMapper {
 		return result;
 	}
 
-	
-
 	/**
 	 * exports
 	 * @author Isaiah Miller
@@ -69,6 +69,4 @@ public class JSONMapper {
 			e.printStackTrace();
 		}
 	}
-	//
-
 }

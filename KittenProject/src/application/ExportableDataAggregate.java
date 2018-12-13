@@ -72,6 +72,9 @@ public class ExportableDataAggregate extends AbstractExportable {
 		this.mySettings = mySettings;
 	}
 	
+	/* @author Isaiah Miller
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		String res = "";

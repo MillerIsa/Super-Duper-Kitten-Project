@@ -11,11 +11,13 @@ import java.io.File;
 public interface Exportable {
 	
 	/**
+	 * @author Isaiah Miller
 	 * export json interface
 	 * @param destFile
 	 */
 	public void exportJSON(File destFile);
 	/**
+	 * @author Isaiah Miller
 	 * import json interface
 	 * @param srcFile
 	 */

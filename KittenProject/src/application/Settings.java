@@ -54,6 +54,7 @@ public class Settings extends AbstractExportable {
 	}
 
 	/**
+	 * @author Isaiah Miller
 	 * gets name
 	 * @return
 	 */
@@ -62,6 +63,7 @@ public class Settings extends AbstractExportable {
 	}
 
 	/**
+	 * @author Isaiah Miller
 	 * sets name
 	 * @param theName
 	 */
@@ -72,6 +74,7 @@ public class Settings extends AbstractExportable {
 	}
 
 	/**
+	 * @author Isaiah Miller
 	 * gets email address
 	 * @return
 	 */
@@ -80,6 +83,7 @@ public class Settings extends AbstractExportable {
 	}
 
 	/**
+	 * @author Isaiah Miller
 	 * sets email address
 	 * @param theEmailAddress
 	 */

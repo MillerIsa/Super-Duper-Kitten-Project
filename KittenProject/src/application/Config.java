@@ -7,6 +7,10 @@ import java.net.URL;
  * @author Isaiah Miller Date: 12/4/18 makes a config file with paths to
  *         persistent data.
  */
+/**
+ * @author Isaiah Miller
+ *
+ */
 public class Config extends AbstractExportable {
 	/**
 	 * The path to the config file. This should not change. It is not an exportable property.
@@ -30,26 +34,50 @@ public class Config extends AbstractExportable {
 
 
 
+	/**
+	 * @author Isaiah Miller
+	 * @return
+	 */
 	public String getMySavePath() {
 		return mySavePath;
 	}
 
+	/**
+	 * @author Isaiah Miller
+	 * @param mySavePath
+	 */
 	public void setMySavePath(String mySavePath) {
 		this.mySavePath = mySavePath;
 	}
 
+	/**
+	 * @author Isaiah Miller
+	 * @return
+	 */
 	public String getMyHomePath() {
 		return myHomePath;
 	}
 
+	/**
+	 * @author Isaiah Miller
+	 * @param myHomePath
+	 */
 	public void setMyHomePath(String myHomePath) {
 		this.myHomePath = myHomePath;
 	}
 
+	/**
+	 * @author Isaiah Miller
+	 * @return
+	 */
 	public String getMySettingsPath() {
 		return mySettingsPath;
 	}
 
+	/**
+	 * @author Isaiah Miller
+	 * @param mySettingsPath
+	 */
 	public void setMySettingsPath(String mySettingsPath) {
 		this.mySettingsPath = mySettingsPath;
 	}

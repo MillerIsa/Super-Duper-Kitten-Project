@@ -6,6 +6,9 @@
  */
 package application;
 
+/**
+ * @author Isaiah Miller
+ */
 public class menuBoxController extends Main {
 
 }

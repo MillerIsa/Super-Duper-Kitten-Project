@@ -11,7 +11,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-/*
+/**
+ * Date 11/2018
+ * @author Isaiah Miller
  * should contain an instance of Settings
  * Should contain an instance of FileChooserDIY which it will pass 
  * the settings instance to
@@ -33,6 +35,7 @@ public class SettingsController {
 	TextField myEmailField;
 
 	/**
+	 * @author Isaiah Miller
 	 * sets the settings
 	 * @param theSettings
 	 */
@@ -58,6 +61,7 @@ public class SettingsController {
 	}
 
 	/**
+	 * @author Isaiah Miller
 	 * save settings
 	 * @param event
 	 */

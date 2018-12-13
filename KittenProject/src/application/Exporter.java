@@ -23,7 +23,6 @@ import com.fasterxml.jackson.databind.ObjectWriter;
  * more information can be found at: https://github.com/FasterXML/jackson
  * 
  * @author Isaiah Miller
- *
  */
 public class Exporter {
 		/**
