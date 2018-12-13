@@ -3,7 +3,7 @@ package application;
 import java.net.URL;
 
 /**
- * @deprecated
+ * @deprecated DO NOT DELETE. Test classes use this for import/export testing.
  * @author Isaiah Miller Date: 12/4/18 makes a config file with paths to
  *         persistent data.
  */
@@ -94,8 +94,6 @@ public class Config extends AbstractExportable {
 	 * @return The path to source the project configuration from.
 	 */
 	public String retConfigPath() {
-		// path should be src/application/save/config.json
-//		new File(getClass().getResource("save").getPath());
 		return getClass().getResource("save/config.json").getPath();
 	}
 

@@ -50,7 +50,6 @@ public class SettingsController {
 	private void initialize() {
 		// initialize text Field contents
 		if (mySettings.getMyName() != null) {
-			//System.out.println("myNameField is: " + myNameField);
 			myNameField.setText(mySettings.getMyName());
 		}
 		if (mySettings.getMyEmailAddress() != null) {
@@ -65,15 +64,10 @@ public class SettingsController {
 	@FXML
 	private void saveSettings(final MouseEvent event) {
 		// save settings from the text fields to model object
-//		GridPane x = (GridPane) (((Node) event.getSource()).getParent());
 		mySettings.setMyName(myNameField.getText());
 		mySettings.setMyEmailAddress(myEmailField.getText());
-
 		// close window
 		((Stage) myNameField.getScene().getWindow()).close();
-
-		//System.out.println("myNameField is: " + myNameField.getText());
-		//System.out.println("myEmailField is: " + myEmailField.getText());
 	}
 
 }

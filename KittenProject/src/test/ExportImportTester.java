@@ -80,7 +80,6 @@ public class ExportImportTester {
 		final Config expected = typicalConfig();
 		final Config origConfig = typicalConfig();
 		final String destPathEnding  = EXPORT + "/" + TYPICAL_CONFIG;
-//		System.out.println("destPathEnding is: " + destPathEnding);
 		final URL testURL = getClass().getResource(destPathEnding);
 		origConfig.exportJSON(new File(testURL.getPath()));
 		
@@ -103,24 +102,16 @@ public class ExportImportTester {
 	}
 	
 	/**
-<<<<<<< HEAD
 	 * Date: 12/8/18
-=======
 	 * export test
->>>>>>> 4587b2571d3750deb6e7fd2e6e25c5f89ef366bb
 	 * @author Isaiah Miller
 	 * @return
 	 */
 	private static Config typicalConfig() {
 		final Config res = new Config();
-//		private String mySourcePath;
-//		private String mySavePath;
-//		private String myHomePath;
-//		private String mySettingsPath
 		res.setMyHomePath("/Home");
 		res.setMySavePath("/Save");
 		res.setMySettingsPath("/Settings");
-//		res.setMySourcePath("/source");
 		return res;
 	}
 
@@ -185,11 +176,7 @@ public class ExportImportTester {
 		out.useDelimiter("\\Z");
 		final String actual = out.next();
 
-//		System.out.println(getClass().getResource(""));
-//		System.out.println(fileName.length());
 		URL testURL2 = getClass().getResource(fileName + ".json");
-//		System.out.println(testURL2);
-//		System.out.println(testURL2.getPath());
 		String expected;
 		if (fileName != "null") {
 			Scanner in = new Scanner(new File(testURL2.getPath()));

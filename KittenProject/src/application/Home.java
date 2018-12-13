@@ -203,7 +203,6 @@ public class Home extends AbstractExportable {
 		final int spreadRandFloat = 10000;
 		for(Field field: fields) {
 			final Random rand = new Random();
-			//System.out.println(field.getType());
 			if(field.getType().equals(Boolean.TYPE)) {
 				field.set(this, rand.nextBoolean());
 			} else if (field.getType().equals(Integer.TYPE)) {
@@ -212,9 +211,6 @@ public class Home extends AbstractExportable {
 				field.set(this, rand.nextFloat() * spreadRandFloat);
 			} 
 			}
-//		File test = new File("");
-//		
-//		System.out.println("path is: " + test.getAbsolutePath());
 		exportJSON(new File("src" + File.separatorChar + "application" + File.separatorChar + "save" + File.separatorChar + "homeDefault.json"));
 		
 	}
